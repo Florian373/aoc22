@@ -15,20 +15,7 @@ for l in lines:
     if sy==srow:
         binrow.add((sx,sy))
 
-"""
-for s in sensors:
-    mh_to = abs(srow - s[1])-s[2]
-    i=0
-    while mh_to<=0:
-        not_b.add((s[0]+i,srow))
-        not_b.add((s[0]-i,srow))
-        mh_to+=1
-        i+=1
 
-#subtract the known beacons
-print(len(not_b)-len(binrow))
-
-"""
 not_b=[]
 for s in sensors:
     mh_to = abs(srow - s[1])-s[2]
